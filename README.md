@@ -4,7 +4,7 @@ Microservice that checks if a file exists, and if it is an image it writes its d
 ## What it does
 This service continuously runs as a process from the terminal and continuously checks the file located adjascent to it titled `input.txt`. If it locates a path to an existing `.png` or `.jpg` file, it will write the dimensions of that file to `output.txt`.
 
-## Steps for inclusion:
+## Steps for inclusion
 1. Clone this repository anywhere on your machine where you can easily access `input.txt` and `output.txt`.
 2. Run `pip install pillow` where you choose to run the microservice. This installs a module that the service uses to find the dimensions of an image file.
 3. Run `python file_exists_service.py` in the directory you cloned to.
