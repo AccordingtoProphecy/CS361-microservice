@@ -10,6 +10,9 @@ This service continuously runs as a process from the terminal and continuously c
 3. Run `python file_exists_service.py` in the directory you cloned to.
 4. Type "exit" into `input.txt` to safely close the service when you are finished.
 
+## Sequence diagram
+![image](CS361-Microservice-UML.png)
+
 ## Requesting data
 - To request data, write the path to an image in `input.txt`. This can be done either with another program or manually.
 - If the path written in `input.txt` is valid, the service will write the dimensions to it in `input.txt`.
