@@ -14,6 +14,13 @@ This service continuously runs as a process from the terminal and continuously c
 - To request data, write the path to an image in `input.txt`. This can be done either with another program or manually.
 - If the path written in `input.txt` is valid, the service will write the dimensions to it in `input.txt`.
 
+### Example in Python
+```python:
+input_file.write('image.png')   # dimensions are 480x480, input_file is input.txt
+time.sleep(2)                   # wait for service to get data from file
+output_file.read('output.txt')  # output.txt should read, "exists, 480, 480"
+```
+
 ## Receiving data
 - To receive data from this service, simply read from `output.txt`.
 - If the service successfully finds a `.png` or `.jpg` file, text in the form `exists, {width}, {height}` will be written to `output.txt`, with `{width}` and `{height}` being replaced with the width and height of the image.
