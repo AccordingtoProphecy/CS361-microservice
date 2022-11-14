@@ -21,7 +21,7 @@ def file_exists_service():
             return
         # Call file_exists and clear input.txt
         else:
-            file_exists(file_check_path, 'output.txt')
+            file_exists(file_check_path.strip(), 'output.txt')
             file_check.seek(0)
             file_check.truncate(0)
 
